@@ -4,3 +4,5 @@ Disassembly of ESI's [E-Tracker](https://www.worldofsam.org/products/e-tracker) 
 and player for ZXM-SoundCard (http://micklab.ru/My%20Soundcard/ZXMSoundCard.htm) from Mick Laboratory.
 
 The changes affected the code's self-modification. Redesigned for ROM flashing.
+
+Also attached is a verilog file for fpga.
