@@ -519,8 +519,10 @@ getNoteAgain:
 		ld	d, (ix + 1)	; ch.ptr.track + 1
 getCommand:
 		ld	hl, list_commands - 1
+;		ld	hl, list_commands - 2
 loc_Find:
 		ld	a, (de)
+;		inc	hl
 		inc	hl
 		sub	(hl)
 		inc	hl
@@ -528,6 +530,10 @@ loc_Find:
 		inc	de
 		ld	c, a
 		ld	a, (hl)
+;		inc	hl
+;		ld	h, (hl)
+;		ld	l, a
+;		jp	(hl)
 		ld	(loc_0_81C9 + 1), a
 loc_0_81C9:
 smcCommandJr:
